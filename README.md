@@ -1,5 +1,25 @@
 # Claude Usage Tray
 
+<p align="center">
+  <img src="screenshot.webp" alt="Claude Usage Tray details window showing 5-hour and weekly usage per account" width="445">
+</p>
+
+[![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-D97757?logo=claude&logoColor=white)](https://claude.com/claude-code)
+[![License: 0BSD](https://img.shields.io/badge/License-0BSD-blue.svg)](LICENSE.md)
+![Platform: Linux](https://img.shields.io/badge/Platform-Linux-FCC624?logo=linux&logoColor=black)
+![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
+![PyQt6](https://img.shields.io/badge/GUI-PyQt6-41CD52?logo=qt&logoColor=white)
+
+![KDE Plasma](https://img.shields.io/badge/KDE%20Plasma-1D99F3?logo=kde&logoColor=white)
+![GNOME](https://img.shields.io/badge/GNOME-4A86CF?logo=gnome&logoColor=white)
+![Wayland](https://img.shields.io/badge/Wayland-FFBC00?logo=wayland&logoColor=black)
+![X11](https://img.shields.io/badge/X11-F28834?logo=xorg&logoColor=white)
+![Kubuntu](https://img.shields.io/badge/Kubuntu-0079C1?logo=kubuntu&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white)
+![Fedora](https://img.shields.io/badge/Fedora-51A2DA?logo=fedora&logoColor=white)
+![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white)
+
 A small system-tray app for KDE Plasma (Wayland or X11) that shows your Claude plan usage —
 the 5-hour window and weekly limits — for one or more Claude Code accounts.
 
