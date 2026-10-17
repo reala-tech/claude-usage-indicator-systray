@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
-# Installs a launcher + KDE autostart entry for the tray app, then (re)starts it.
+# Copies the tray app to ~/.local/share/claude-usage-tray, installs a launcher +
+# KDE autostart entry pointing there, then (re)starts it. The source folder can be
+# deleted afterwards.
 set -euo pipefail
-here="$(cd "$(dirname "$0")" && pwd)"
-chmod +x "$here/claude_usage_tray.py" "$here/add-account.sh"
+src="$(cd "$(dirname "$0")" && pwd)"
+here="${XDG_DATA_HOME:-$HOME/.local/share}/claude-usage-tray"
+mkdir -p "$here"
+install -m 755 "$src/claude_usage_tray.py" "$here/claude_usage_tray.py"
+chmod +x "$src/add-account.sh"
 desktop="[Desktop Entry]
 Type=Application
 Name=Claude Usage Tray

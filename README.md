@@ -68,8 +68,13 @@ Requirements: Python 3, PyQt6 (see above), and the `claude` CLI on your `PATH`.
 ./install.sh
 ```
 
-This adds an app-menu entry and a login autostart entry, then starts the tray immediately
-(restarting it if it was already running). Run it again any time after updating the code.
+This copies the app to `~/.local/share/claude-usage-tray/`, adds an app-menu entry and a login
+autostart entry pointing there, then starts the tray immediately (restarting it if it was
+already running). You can delete the downloaded folder afterwards. Run `./install.sh` again
+any time after updating the code.
+
+To uninstall: `pkill -f claude_usage_tray.py; rm -r ~/.local/share/claude-usage-tray ~/.local/share/applications/claude-usage-tray.desktop ~/.config/autostart/claude-usage-tray.desktop`
+(your config in `~/.config/claude-usage-tray/` is left alone).
 
 ## Using it
 
@@ -148,5 +153,5 @@ To pick the accounts and their names yourself instead of auto-discovery:
 ## Files
 
 - `claude_usage_tray.py` — the app
-- `install.sh` — installs menu and autostart entries, then (re)starts the app
+- `install.sh` — copies the app to `~/.local/share/claude-usage-tray`, installs menu and autostart entries, then (re)starts it
 - `add-account.sh` — creates and logs in an extra Claude Code profile
