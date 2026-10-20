@@ -1,7 +1,7 @@
 # Claude Usage Tray
 
 <p align="center">
-  <img src="screenshot.webp" alt="Claude Usage Tray details window showing 5-hour and weekly usage per account" width="1379">
+  <img src="screenshot-v2.webp" alt="Claude Usage Tray details window showing 5-hour and weekly usage per account" width="1379">
 </p>
 
 [![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-D97757?logo=claude&logoColor=white)](https://claude.com/claude-code)
